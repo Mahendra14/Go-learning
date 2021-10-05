@@ -21,4 +21,7 @@ func main() {
 
 	//checking whats the type of input
 	fmt.Printf("The type of the input is of %T", input)
+
+	//to convert the string to the number type we make use of the strconv package in next one.
+
 }
