@@ -24,4 +24,11 @@ func main() {
 	//we can make use of same format method to format this date too.
 	createdDate := time.Date(2020, time.March, 18, 18, 18, 0, 0, time.UTC)
 	fmt.Println("Printing the created Date : ", createdDate)
+
+	//to create an exe file from this we need to do go build in cmd
+	//we can create custom ones to diff os like mac and linux using following commands
+	//GOOS:"darwin" go build  :----  in case of mac
+	//GOOS:"linux" go build :---- in case of linux
+	//to see the value of goos on curretn system : go env and
+	//In my case it is as follows in the values: set GOOS=windows
 }
