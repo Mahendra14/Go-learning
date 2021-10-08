@@ -27,8 +27,16 @@ func main() {
 
 	//to create an exe file from this we need to do go build in cmd
 	//we can create custom ones to diff os like mac and linux using following commands
+	//more good command:  env GOOS=target-OS GOARCH=target-architecture go build package-import-path
 	//GOOS:"darwin" go build  :----  in case of mac
 	//GOOS:"linux" go build :---- in case of linux
 	//to see the value of goos on curretn system : go env and
 	//In my case it is as follows in the values: set GOOS=windows
+
+	//i tried a lot of ways but only this command works:
+	//go build main.go
+	//then to install the executable use
+	//go install
+	//to see whether its worked do following
+	//which main.exe
 }
